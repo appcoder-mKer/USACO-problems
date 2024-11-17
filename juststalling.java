@@ -20,14 +20,14 @@ public class juststalling {
         // System.out.println(cowLength);
         int numberOfTimesAppear = 0; 
         int numberOfCombo = 1;
-        int skipindex = -1;
         for(int i = 0; i<numberOfCows; i++){
 
             int theCow = cowLength.get(i);
           
             for(int n = 0; n<numberOfCows;n++){
-                if(n<=skipindex){
-                    continue;
+                if(stallLength.get(n)>=cowLength.get(i)){
+                    
+                    //we want to get rid of the ones we have already added and then add them to the count which then we would multiply to number of combo 
                 }
                 
                 if(theCow<=stallLength.get(n)){
@@ -40,7 +40,6 @@ public class juststalling {
            
 
             numberOfTimesAppear = 0;
-            skipindex+=1;
         }
 
         System.out.println(numberOfCombo);
