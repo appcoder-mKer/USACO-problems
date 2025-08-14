@@ -1,3 +1,4 @@
+package JustStalling;
 import java.util.*;  
 import java.io.*;  
 public class juststalling {  
